@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Nosifer|Russo+One');
+
+body {
+  background: #ffffff;
+  font-family: "Droid Sans";
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+.centered {
+  text-align: center;
+}
+
+/*---------------------------------------------------------------------------*/
+/*ШАПКА*/
+.navbar-inverse {
+  background: rgba(55, 57, 61, 0.7);
+}
+
+.navbar-header {
+  font-family: "Indie Flower";
+  letter-spacing: 2px;
+}
+
+.navbar-brand i{
+  color: #00baff;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+  font-size: 15px;
+  color: #f2f2f2;
+  font-weight: 550;
+  -webkit-transition: color .30s; /*для плавной смены backgrond*/
+  -o-transition: color .30s;
+  o-transition: color .30s;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #00baff;
+  -webkit-transition: color .30s; /*для плавной смены backgrond*/
+  -o-transition: color .30s;
+  o-transition: color .30s;
+
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
+  border-radius: 5px;
+  background: rgb(100, 97, 103);
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.open>a:hover {
+  border-radius: 5px;
+  background: rgb(100, 97, 103);
+}
+/*---------------------------------------------------------------------------*/
+/*ОБЛОЖКА*/
+
+#wrapper {
+  padding-top: 80px;
+  background: url(../img/travel1.jpg) no-repeat center top;
+  background-attachment: relative;
+  background-position: center;
+  min-height: 400px;
+  width: 100%;
+  background-size: 100%;
+
+
+  -webkit-background-size: cover;    /*для адаптивности на моб устр*/
+  -moz-background-size: cover;  /*для мозилы*/
+  -o-background-size: cover;  /*для оперы*/
+  -background-size: cover;  /*для остальных*/
+}
+
+#wrapper h1 {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 4px #282727;
+  padding-top: 65px;
+  padding-bottom: 35px;
+  color: rgb(9, 173, 215);
+  font-family: "Indie Flower";
+
+}
+
+.down {
+    text-align: center;
+}
+
+.down i {
+  color: #ff0073;
+  text-shadow: 2px 2px 10px #000000;
+  font-weight: 850;
+  font-size: 90px;
+}
+
+.down i:hover {
+  color: #ff0073;
+  text-shadow: 2px 2px 10px #ffffff;
+  font-weight: 850;
+  font-size: 90px;
+
+  -webkit-transform: scale(1.2) ;
+     -moz-transform: scale(1.2) ;
+       -o-transform: scale(1.2) ;
+          transform: scale(1.2) ;
+
+-webkit-transition: 2s;
+   -moz-transition: 2s;
+     -o-transition: 2s;
+        transition: 2s;
+}
+
+.down i:not(:hover) {
+  -webkit-transition: 2s;
+     -moz-transition: 2s;
+       -o-transition: 2s;
+          transition: 2s;
+}
+
+#wrapper p {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.1) ;
+     -moz-transform: scale(1.1) ;
+       -o-transform: scale(1.1) ;
+          transform: scale(1.1) ;
+
+-webkit-transition: 2s;
+   -moz-transition: 2s;
+     -o-transition: 2s;
+        transition: 2s;
+}
+
+.zoom:not(:hover) {
+  -webkit-transition: 2s;
+     -moz-transition: 2s;
+       -o-transition: 2s;
+          transition: 2s;
+}
+
+#wrapper h1:hover {
+  color: #ff0073;
+  cursor: default;
+
+  -webkit-transition: 2s;
+     -moz-transition: 2s;
+       -o-transition: 2s;
+          transition: 2s;
+}
+#wrapper h1:not(:hover) {
+  -webkit-transition: 2s;
+     -moz-transition: 2s;
+       -o-transition: 2s;
+          transition: 2s;
+}
+/*---------------------------------------------------------------------------*/
+
+/*ПРИЧИНЫ*/
+
+#reasons {
+  background: #ffffff;
+  color: #363434;
+  padding: 35px 15px;
+}
+
+#reasons p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#reasons h3{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 25px 0;
+  color: rgb(9, 173, 215);
+  text-shadow: 1px 1px 1px rgba(8, 7, 8, 0.5);
+}
+
+#reasons h4 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  color: rgb(22, 111, 144);
+  text-shadow: 1px 1px 1px rgba(8, 7, 8, 0.37);
+}
+
+#reasons img {
+  border-radius: 10px;
+
+  -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+      -o-transition: all 2s ease;
+     -ms-transition: all 2s ease;
+         transition: all 2s ease;
+}
+
+.reas {
+  padding-top: 35px;
+}
+
+.img_zoom:hover {
+  -webkit-transform: scale(1.01) ;
+     -moz-transform: scale(1.01) ;
+       -o-transform: scale(1.01) ;
+          transform: scale(1.01) ;
+
+  -webkit-filter: contrast(145%);
+  box-shadow: 1px 1px 3px rgba(120, 122, 122, 0.95);
+}
+
+.col-lg-5 {
+  padding-bottom: 15px;
+}
+
+.img_c img {
+  margin: 0 auto;
+}
+
+/*Слайдер*/
+
+#slider_block {
+  padding-bottom: 80px;
+  padding-top: 30px;
+  background: rgba(38, 39, 40, 0.86);
+}
+
+#reasons i, #slider_block i {
+  color: #fb4b4b;
+}
+
+#slider_block h3 {
+  font-size: 25px;
+  text-align: center;
+  font-weight:700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  margin-bottom: 35px;
+}
+
+.slider {
+  margin-top: 20px;
+  max-width: 85%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 40px #000000;
+
+}
+
+.slider_slide {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  outline: none;
+}
+
+.slider_slide img {
+  border-radius: 10px;
+}
+
+.slide_caption {
+  color: #fff;
+  text-align: center;
+}
+
+.slide_desc {
+  color: #fff;
+}
+
+.slider_text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(62, 63, 64, 0.83);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.slider_text h4 {
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #010101;
+}
+
+.slider_text p {
+  text-shadow: 1px 1px 1px #010101;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.slide_caption, .slide_desc {
+  margin: 0;
+  padding: 5px;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1001;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 25px;
+}
+
+.slick-next {
+  right: 28px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 35px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.8);  /*тень для стрелок*/
+}
+
+
+#back_img {
+  width: 100%;
+  height: 100%;
+
+
+  background: url(../img/back_sl2.jpg) no-repeat center top;
+  background-attachment: relative;
+  background-position: center;
+  width: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;    /*для адаптивности на моб устр*/
+  -moz-background-size: cover;  /*для мозилы*/
+  -o-background-size: cover;  /*для оперы*/
+  -background-size: cover;  /*для остальных*/
+}
+
+/*Подслайдер*/
+
+.slider_map {
+  max-width: 85%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.slider_map_slide {
+  outline: none;
+  box-shadow: 0 0 30px #000000;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.slider_map_slide img {
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.slider_map_slide img:hover, .slick-current img {
+  background: #00abff;
+}
+
+
+
+
+.slick-dots li button{
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px rgba(59, 60, 61, 0.82);
+  -webkit-transition: border-color .3s; /*для плавной смены backgrond*/
+  -o-transition: border-color .3s;
+  o-transition: border-color .3s;
+}
+
+.slick-dots li button:before {
+  content: '';
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  margin: -5px 0 0 -5px;
+  -webkit-transition: background .3s; /*для плавной смены backgrond*/
+  -o-transition: background .3s;
+  o-transition: background .3s;
+}
+
+.slick-dots li button:hover,
+.slick-dots li.slick-active button {
+  border-color: #00abff;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li.slick-active button:before {
+  background: #00abff;
+}
+/*---------------------------------------------------------------------------*/
+/*ФОРМА*/
+
+#form {
+  padding: 45px 5px;
+}
+
+#form i {
+  color: #fb4b4b;
+  font-size: 20px;
+}
+
+#form h4, #form p {
+  text-align: center;
+}
+
+#form p {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+#form h4 {
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #747474;
+
+}
+
+.form-control {
+  margin: 2px;
+}
+#form button, #form html #form input[type=button], #form input[type=reset], #form input[type=submit] {
+  max-width: 16%;
+  margin: 0 auto;
+  background: #f2f2f2;
+  color: #06b4ff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 0 3px #000000;
+  margin-top: 5px;
+  padding: 2px;
+}
+
+ button, html input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover{
+  border: 2px solid #06b4ff;
+  -webkit-transition: border .50s;
+  -o-transition: border .50s;
+  o-transition: border .50s;
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+/*Прокрутка вверх*/
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:100%;
+	background:url(../img/ui.totop.png) no-repeat left top;
+}
+
+#toTopHover {
+	background:url(../img/ui.totop.png) no-repeat left -51px;
+	width:51px;
+	height:51px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}
+/*----------------------------------------------------------------------------*/
+
+#back_footer {
+  width: 100%;
+  height: 100%;
+
+
+  background: url(../img/footer.jpg) no-repeat center top;
+  background-attachment: relative;
+  background-position: center;
+  width: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;    /*для адаптивности на моб устр*/
+  -moz-background-size: cover;  /*для мозилы*/
+  -o-background-size: cover;  /*для оперы*/
+  -background-size: cover;  /*для остальных*/
+}
+
+#footer {
+  background: rgba(38, 39, 40, 0.86);
+  padding: 40px 20px;
+}
+
+.mewarky {
+  color: #00baff;
+  font-size: 20px;
+  font-weight: 550;
+  font-family: "Nosifer";
+  letter-spacing: 1px;
+}
+
+.gmail {
+  color: #edecec;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#footer i {
+  color: #00baff;
+  font-size: 30px;
+  padding: 20px;
+  -webkit-transition: color .30s; /*для плавной смены backgrond*/
+  -o-transition: color .30s;
+  o-transition: color .30s;
+
+}
+
+#footer i:hover {
+  color: #ff0073;
+  text-shadow: 1px 1px 1px #000;
+  -webkit-transition: color .30s; /*для плавной смены backgrond*/
+  -o-transition: color .30s;
+  o-transition: color .30s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**/
